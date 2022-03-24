@@ -38,9 +38,10 @@ class BST:
    
     def searchBst(self, rootNode, searchItem):
             
-        
+        SearchItem = searchItem
+                    
             if rootNode.data == searchItem:
-                print("data found at root Node: best case O(1)")
+                print("data found at root Node:- {}: best case O(1)".format(SearchItem))
                 
                 
                 
@@ -50,7 +51,7 @@ class BST:
                         return print("sorry searchItem not availabe in the Data Base")
   
                 if rootNode.leftchild.data == searchItem:
-                    print("found data at left")
+                    print("found data at left:- {}".format(SearchItem))
                 else:
                     self.searchBst( rootNode.leftchild, searchItem )
                     
@@ -61,7 +62,7 @@ class BST:
                     return print("sorry searchIteam not availabe in the Data Base")
 
                 elif rootNode.rightchild.data == searchItem:
-                    print("found data at right")
+                    print("found data at right:- {}". format(SearchItem))
                 else:
                     self.searchBst( rootNode.rightchild, searchItem )
                     
