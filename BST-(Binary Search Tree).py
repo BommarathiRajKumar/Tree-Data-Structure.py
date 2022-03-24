@@ -38,7 +38,7 @@ class BST:
    
     def searchBst(self, rootNode, searchItem):
             
-        SearchItem = searchItem
+            SearchItem = searchItem
                     
             if rootNode.data == searchItem:
                 print("data found at root Node:- {}: best case O(1)".format(SearchItem))
